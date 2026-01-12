@@ -1,8 +1,8 @@
-# Explicação da arquitetura
+# Explicação da arquitetura proposta
 
 A arquitetura apresentada organiza o sistema em camadas modulares e especializadas, cada uma com responsabilidades bem definidas. Essa estrutura facilita escalabilidade, manutenibilidade, auditabilidade e confiabilidade, características essenciais para sistemas de moderação sensível, como a detecção de racismo e discriminação em plataformas digitais, especialmente no contexto do português brasileiro, onde LLMs generalistas apresentam limitações linguísticas e culturais.
 
-O fluxo ocorre de cima para baixo: o conteúdo entra pela camada de aplicação, passa por processamento especializado, é analisado de forma contextual, resulta em uma decisão automatizada ou sinalização humana, e, por fim, gera uma resposta adequada ao usuário ou plataforma.
+O fluxo ocorre de cima para baixo: o conteúdo entra pela camada de aplicação, passa por processamento especializado, é analisado de forma contextual, resulta em uma decisão automatizada ou sinalização humana, e, por fim, gera uma resposta adequada ao usuário ou plataforma. A seguir, tem-se a explicação das camadas da Arquitetura proposta.
 
 1. **Camada de Aplicação:** Esta é a porta de entrada do sistema. Ela permite que diferentes tipos de clientes, como, aplicações web, plataformas digitais, sistemas parceiros ou dashboards administrativos, enviem conteúdos para análise. O conteúdo enviado pelo usuário é representado por:
 
@@ -20,7 +20,7 @@ Esta camada garante integração universal e coleta estruturada de dados.
 
 Para isso, disponibiliza:
  - APIs REST e GraphQL para integração estruturada;
- - WebSockets para análise em tempo real (ex.: chats e comentários ao vivo);
+ - WebSockets para análise em tempo real;
  - SDKs para múltiplas linguagens, facilitando a adoção do sistema;
  - Dashboard administrativo, usado para monitoramento, auditoria e ajustes operacionais.
 
@@ -99,7 +99,7 @@ Sendo esta camada responsável por:
  - Realizar calibração de confiança, reduzindo falsos positivos ou negativos;
  - Gerar explicações, indicando quais módulos influenciaram a decisão.
 
-5. **Camada de Decisão:** Com base na pontuação final e no contexto, o sistema define qual ação tomar. Decisão baseada em \(S_C\) e thresholds \(\theta_1, \theta_2, \theta_3\):
+5. **Camada de Decisão:** Com base na pontuação final e no contexto, o sistema define qual ação tomar. Decisão baseada em \(S_C\) e thresholds θ₁, θ₂, θ₃:
 
 $$
 D =

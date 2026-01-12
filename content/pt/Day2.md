@@ -1,4 +1,4 @@
-# LIMITAÇÕES TÉCNICAS DOS LLMs PARA MODERAÇÃO ÉTNICA 
+# Limitações técnicas dos LLMs para moderação étnica 
 
 ## Alguns dados relevantes no contexto de LLMs considerando a linguística e grupos étnicos:
 
@@ -31,7 +31,7 @@ representacao_etnica = {
 
 Quando usamos IA para classificação de conteúdo, como identificar discursos racistas em textos, enfrentamos o problema da explicabilidade. Isso significa que, embora o modelo possa fornecer uma resposta ou classificação, não é evidente como ele chegou a essa decisão.
 
-1. Problema da Explicabilidade (Explainable AI – XAI)
+### Problema da Explicabilidade (Explainable AI – XAI)
 
 Ao usar IA para classificação de conteúdo, como identificar discursos racistas em textos, enfrentamos o problema da explicabilidade. Ou seja, mesmo que o modelo forneça uma classificação, não é claro como ele chegou a essa decisão. Para um modelo matemático:
 
@@ -55,4 +55,6 @@ $$
 \frac{\partial y}{\partial x} \approx 0
 $$
 
-Isso significa que **não podemos responder perguntas simples**, como:  “Por que esta frase foi considerada racista?”. Além disso, **LLMs treinados majoritariamente em inglês apresentam limitações no português brasileiro**, especialmente ao lidar com **gírias, expressões regionais ou nuances culturais**, tornando ainda mais difícil aplicar **guardrails precisos**. LLMs apresentam limitações no português brasileiro, pois são treinados majoritariamente em inglês e funcionam como caixas-pretas, dificultando explicações sobre decisões de moderação de conteúdo. No próximo slide, tem-se a Arquitetura proposta. 
+Isso significa que **não podemos responder perguntas simples**, como:  “Por que esta frase foi considerada racista?”. Além disso, **LLMs treinados majoritariamente em inglês apresentam limitações no português brasileiro**, especialmente ao lidar com **gírias, expressões regionais ou nuances culturais**, tornando ainda mais difícil aplicar **guardrails precisos**. 
+
+LLMs apresentam limitações no português brasileiro, pois são treinados majoritariamente em inglês e funcionam como caixas-pretas, dificultando explicações sobre decisões de moderação de conteúdo. Nos próximos slides, tem-se a Arquitetura e sua explicação, estabelecendo assim, uma proposta de solução para este problema.

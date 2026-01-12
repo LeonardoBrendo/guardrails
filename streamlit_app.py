@@ -61,7 +61,7 @@ with placeholder:
 placeholder.empty()
 
 col1, col2, col3 = st.columns((1, 4, 1))
-st.markdown(_("# Desafio proposto: Desenvolver um guardrail que não use LLM para dar a avaliação."))
+st.markdown(_("# Desafio proposto: Desenvolver um guardrail que não use ***Large Language Model*** (LLM) para dar a avaliação."))
 
 # ------------------ SELETOR DE SLIDE ------------------
 
@@ -87,11 +87,12 @@ with st.expander(_("About the #30DaysOfStreamlit")):
     st.markdown(
         """
         Baseado no requisito **desenvolver um guardrail que não use LLM para dar a avaliação**, 
-        este desafio segue a seguinte estrutura:
-        - T1: Combate ao racismo em plataformas digitais.
-        - T2: Problematização do desafio e proposta de solução.
-        - T3: Metodologia proposta.
-        - T4: Considerações finais.
+        este desafio tem sua solução pormenorizadas nos 5 slides, conforme descrito abaixo:
+        - Slide 1: Introdução e Contextualização.
+        - Slide 2: Limitações técnicas dos LLMs para moderação étnica.
+        - Slide 3: Arquitetura da solução "Sentinela étnico-cultural".
+        - Slide 4: Explicação da Arquitetura proposta.
+        - Slide 5: Conclusão e Trabalhos Futuros.
         """
     )
 
@@ -108,7 +109,6 @@ st.sidebar.markdown(
     """
     - Python  
     - Streamlit  
-    - Docker  
     - Git/GitHub  
     - Linux / WSL  
     """
